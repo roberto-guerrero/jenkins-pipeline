@@ -12,13 +12,13 @@ public class CalculatorTest {
     Calculator calculator = new Calculator();
 
     @Test
-    void valueTest() {
+    void TestValue() {
         int result = calculator.sum(1, 4);
         assertThat("Result must be 5.", result, is(equalTo(5)));
     }
 
     @Test
-    void rangeTest() {
+    void TestPositive() {
         int result = calculator.sum(1, 4);
         assertThat("Result must be positive value.", result, is(greaterThan(0)));
     }
