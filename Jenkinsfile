@@ -4,6 +4,11 @@ pipeline {
         maven 'Default'
     }
     stages {
+        stage('version') {
+            steps {
+                sh 'mvn --version'
+            }
+        }
         stage ('Compile Stage'){
             steps {
                 sh 'mvn clean compile'
