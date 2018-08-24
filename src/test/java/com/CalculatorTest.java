@@ -12,7 +12,7 @@ public class CalculatorTest {
     Calculator calculator = new Calculator();
 
     @Test
-    void TestValue() {
+    void TestSumValue() {
         int result = calculator.sum(1, 4);
         assertThat("Result must be 5.", result, is(equalTo(5)));
     }
@@ -21,5 +21,11 @@ public class CalculatorTest {
     void TestPositive() {
         int result = calculator.sum(1, 4);
         assertThat("Result must be positive value.", result, is(greaterThan(0)));
+    }
+
+    @Test
+    void TestSubstractValue() {
+        int result = calculator.substract(4, 3);
+        assertThat("Result must be 1.", result, is(equalTo(1)));
     }
 }
