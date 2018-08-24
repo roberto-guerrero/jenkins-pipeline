@@ -6,7 +6,7 @@ public class CalculatorImpl {
         int value1 = 99;
         int value2 = 100;
 
-        int result = calc.sum(value1 value2);
+        int result = calc.sum(value1, value2);
 
         System.out.println("Result = " + result);
     }
