@@ -28,4 +28,10 @@ public class CalculatorTest {
         int result = calculator.substract(4, 3);
         assertThat("Result must be 1.", result, is(equalTo(1)));
     }
+
+    @Test
+    void TestMultiplyValue() {
+        int result = calculator.multiply(4, 3);
+        assertThat("Result must be 12.", result, is(equalTo(12)));
+    }
 }
